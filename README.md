@@ -9,11 +9,16 @@
 </p>
 
 <p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License: Apache 2.0" /></a>
+</p>
+
+<p align="center">
   <a href="#-problemática-y-solución">Solución</a> •
   <a href="#-sponsors-y-aliados-estratégicos">Sponsors y Aliados</a> •
   <a href="#-servicios-de-asesoría-personalizada">Servicios</a> •
   <a href="#-aplicación-web">Aplicación Web</a> •
-  <a href="#-equipo">Equipo</a>
+  <a href="#-equipo">Equipo</a> •
+  <a href="#-licencia-y-propiedad-intelectual">Licencia</a>
 </p>
 
 ---
@@ -98,3 +103,11 @@ El código fuente de la aplicación web completa desarrollada para el hackathon 
 * **Yovanny Chiquiza:** Logística y visión de negocio
 * **Edwin Cardoso:** Coaching y vinculación comunitaria
 * **David Agudelo:** Ingeniería y arquitectura tecnológica
+
+---
+
+## ⚖️ Licencia y Propiedad Intelectual
+
+* **Código de Software:** Distribuido y licenciado bajo los términos de la **[Apache License 2.0](LICENSE)**. Esto garantiza un marco abierto, transparente y colaborativo para la comunidad, con protección explícita de patentes y defensa mutua.
+* **Marca y Elementos Distintivos:** El nombre "NexoBridge", isotipos, logotipos, eslóganes y activos de diseño no forman parte de la concesión de software libre y están expresamente reservados conforme a la cláusula 6 de la licencia Apache 2.0.
+* **Marco Legal y Cumplimiento:** Para conocer los términos de servicio, privacidad transfronteriza, políticas KYC/AML y salvaguardas de datos comerciales y de IA, consulte el documento integral **[LEGAL_TERMS_PRIVACY_KYC_IP.md](./LEGAL_TERMS_PRIVACY_KYC_IP.md)**.
