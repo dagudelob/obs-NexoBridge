@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="100%">
+  <defs>
+    <!-- Filtro de sombra suave -->
+    <filter id="shadowBridge" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+
+    <!-- Gradiente de conexión en la diagonal -->
+    <linearGradient id="diagonalBridge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18A7A1" />
+      <stop offset="40%" stop-color="#18A7A1" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F4993C" />
+      <stop offset="100%" stop-color="#F4993C" />
+    </linearGradient>
+
+    <!-- Gradiente para el pilar izquierdo (Canadá / Norte) -->
+    <linearGradient id="canadaColumn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24C2BA" />
+      <stop offset="100%" stop-color="#18A7A1" />
+    </linearGradient>
+
+    <!-- Gradiente para el pilar derecho (LatAm / Sur) -->
+    <linearGradient id="latamColumn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA84A" />
+      <stop offset="100%" stop-color="#F4993C" />
+    </linearGradient>
+
+    <!-- Fondo del icono -->
+    <linearGradient id="darkNavyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12334D" />
+      <stop offset="100%" stop-color="#0A2033" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== EMBLEMA / ISOTIPO (ICONO) ==================== -->
+  <g transform="translate(30, 25)">
+    <!-- Contenedor Squircle -->
+    <rect width="210" height="210" rx="52" fill="url(#darkNavyBg)" />
+
+    <!-- Olas del mar / separación territorial -->
+    <path d="M 54 158 Q 90 152 126 158" stroke="#18A7A1" stroke-width="2.5" stroke-linecap="round" opacity="0.25" fill="none" />
+    <path d="M 68 165 Q 98 160 128 165" stroke="#F4993C" stroke-width="2" stroke-linecap="round" opacity="0.25" fill="none" />
+
+    <!-- Cables atirantados del puente (Estructura de suspensión) -->
+    <line x1="55" y1="48" x2="80" y2="84" stroke="#18A7A1" stroke-width="1.8" opacity="0.4" stroke-linecap="round" />
+    <line x1="55" y1="70" x2="88" y2="96" stroke="#18A7A1" stroke-width="1.5" opacity="0.3" stroke-linecap="round" />
+    
+    <line x1="125" y1="135" x2="100" y2="100" stroke="#F4993C" stroke-width="1.8" opacity="0.4" stroke-linecap="round" />
+    <line x1="125" y1="112" x2="92" y2="88" stroke="#F4993C" stroke-width="1.5" opacity="0.3" stroke-linecap="round" />
+
+    <!-- Pilar 1: Territorio Izquierdo (Canadá - Verde azulado / Teal) -->
+    <rect x="44" y="32" width="22" height="120" rx="11" fill="url(#canadaColumn)" />
+
+    <!-- Pilar 2: Territorio Derecho (Latinoamérica - Ámbar / Naranja) -->
+    <rect x="114" y="32" width="22" height="120" rx="11" fill="url(#latamColumn)" />
+
+    <!-- Puente Diagonal Unificador (La calzada que conecta ambos territorios) -->
+    <path d="M 55 32 L 125 130" 
+          stroke="url(#diagonalBridge)" 
+          stroke-width="22" 
+          stroke-linecap="round" 
+          filter="url(#shadowBridge)" />
+
+    <!-- Nodo central de integración y transferencia (Punto de encuentro) -->
+    <circle cx="90" cy="81" r="7.5" fill="#FFFFFF" filter="url(#shadowBridge)" />
+    <circle cx="90" cy="81" r="3.5" fill="#12334D" />
+
+    <!-- Marcadores viales sutiles en la diagonal -->
+    <path d="M 58 37 L 122 125" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 5" opacity="0.45" />
+  </g>
+
+  <!-- ==================== TIPOGRAFÍA / LOGOTIPO ==================== -->
+  <g transform="translate(285, 135)">
+    <!-- Nexo -->
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="76" 
+          font-weight="800" 
+          letter-spacing="-1.5px" 
+          fill="#12334D">Nexo</text>
+
+    <!-- Bridge -->
+    <text x="195" y="0" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="76" 
+          font-weight="400" 
+          letter-spacing="-0.5px" 
+          fill="#18A7A1">Bridge</text>
+
+    <!-- Tagline explicativo del puente continental -->
+    <text x="6" y="36" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="14.5" 
+          font-weight="600" 
+          letter-spacing="5px" 
+          text-transform="uppercase" 
+          fill="#F4993C">CANADA <tspan fill="#94A3B8">•</tspan> LATINOAMÉRICA</text>
+
+    <text x="6" y="60" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+          font-size="12" 
+          font-weight="500" 
+          letter-spacing="2px" 
+          fill="#64748B">CROSS-BORDER CONNECTION PLATFORM</text>
+  </g>
+</svg>

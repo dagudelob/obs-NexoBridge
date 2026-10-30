@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Filtro de sombra suave para elevación -->
+    <filter id="bridgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Gradiente de unión en la calzada del puente: de Teal (Canadá) a Naranja (LatAm) -->
+    <linearGradient id="bridgeSpanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18A7A1" />
+      <stop offset="38%" stop-color="#18A7A1" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="62%" stop-color="#F4993C" />
+      <stop offset="100%" stop-color="#F4993C" />
+    </linearGradient>
+
+    <!-- Gradiente sutil para la columna izquierda (Canadá / Norte) -->
+    <linearGradient id="canadaLand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22BFB8" />
+      <stop offset="100%" stop-color="#18A7A1" />
+    </linearGradient>
+
+    <!-- Gradiente sutil para la columna derecha (Latinoamérica / Sur) -->
+    <linearGradient id="latamLand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA84A" />
+      <stop offset="100%" stop-color="#F4993C" />
+    </linearGradient>
+
+    <!-- Gradiente fondo -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12334D" />
+      <stop offset="100%" stop-color="#0C2335" />
+    </linearGradient>
+  </defs>
+
+  <!-- Contenedor Squircle / Icon Base -->
+  <rect width="256" height="256" rx="64" fill="url(#bgGradient)" />
+
+  <g transform="translate(18, 16)">
+    <!-- ================= RÍO / OCÉANO ENTRE AMBOS TERRITORIOS ================= -->
+    <path d="M 68 190 Q 110 184 152 190" stroke="#18A7A1" stroke-width="3" stroke-linecap="round" opacity="0.2" fill="none" />
+    <path d="M 80 198 Q 110 194 140 198" stroke="#F4993C" stroke-width="2.5" stroke-linecap="round" opacity="0.2" fill="none" />
+
+    <!-- ================= CABLES DE SUSPENSIÓN / ATIRANTADO ================= -->
+    <!-- Cables desde el pilar norte (Canadá) hacia la calzada central -->
+    <line x1="68" y1="58" x2="98" y2="102" stroke="#18A7A1" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+    <line x1="68" y1="84" x2="108" y2="116" stroke="#18A7A1" stroke-width="1.8" stroke-linecap="round" opacity="0.3" />
+
+    <!-- Cables desde el pilar sur (LatAm) hacia la calzada central -->
+    <line x1="152" y1="166" x2="122" y2="122" stroke="#F4993C" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+    <line x1="152" y1="140" x2="112" y2="108" stroke="#F4993C" stroke-width="1.8" stroke-linecap="round" opacity="0.3" />
+
+    <!-- ================= PILAR IZQUIERDO: CANADÁ / TERRITORIO NORTE ================= -->
+    <rect x="54" y="38" width="28" height="148" rx="14" fill="url(#canadaLand)" />
+
+    <!-- ================= PILAR DERECHO: LATINOAMÉRICA / TERRITORIO SUR ================= -->
+    <rect x="138" y="38" width="28" height="148" rx="14" fill="url(#latamLand)" />
+
+    <!-- ================= PUENTE DIAGONAL DE LA 'N' (EL VÍNCULO NEXOBRIDGE) ================= -->
+    <!-- Estructura del Puente / Calzada que abraza y conecta las dos orillas -->
+    <path d="M 68 38 
+             L 152 158" 
+          stroke="url(#bridgeSpanGradient)" 
+          stroke-width="28" 
+          stroke-linecap="round" 
+          filter="url(#bridgeGlow)" />
+
+    <!-- Junta / Punto de Encuentro Central (Pivote de Integración) -->
+    <circle cx="110" cy="98" r="9" fill="#FFFFFF" filter="url(#bridgeGlow)" />
+    <circle cx="110" cy="98" r="4.5" fill="#12334D" />
+
+    <!-- Detalles del Puente: Línea guía de tránsito y conexión -->
+    <path d="M 72 44 L 148 152" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.4" />
+  </g>
+</svg>

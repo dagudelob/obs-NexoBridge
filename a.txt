@@ -1,0 +1,65 @@
+Team Name: NexoBridge
+Team Members :
+Alex Muñoz Angel (Commerce, import, export & distribution) @alexmunozangel_54539
+Boris Caamaño (Software development)@boriscaamano   
+Yovanny Chiquiza (Logistics & business vision)@yonny08 
+Edwin Cardoso (Coaching & community engagement)@edwin_67091 
+David Agudelo (Engineering) @deagudelo  agudelo.david@hotmail.com
+Theme/Sub-theme: International Trade & Business Navigation (Connecting Latino American business ideas with Canadian opportunities and Canadian Small Business with Latin America)
+Project Name: NexoBridge
+Problem:
+What’s the user's pain / need? Entrepreneurs face a fragmented path from idea to international trade due to high complexity (customs classifications, tariffs, documentation), scattered information across government portals and trade datasets, and limited market visibility.
+Who experiences it? Aspiring entrepreneurs, small business owners, and new importers who lack an existing trade network or specialist support.
+Solution:
+What are you building in Lovable?
+
+A web app where you type a trade goal in plain words, like “I want to import Colombian coffee to sell in Toronto,”and get back a step-by-step plan, with every step linked to the official government source.
+Key features
+A plan, not a pile of links: 4–6 tasks in order, such as finding your product’s tariff code, checking the duty under the Colombia–Canada trade agreement, and getting the food import licence. Each task links to the government page that confirms it.
+Every fact shows its source: trade numbers and rules come only from official sites (CBSA, CFIA, Statistics Canada, ProColombia). If the app can’t find a source, it says “not confirmed” instead of guessing.
+It flags what’s missing: if you haven’t said whether your coffee is green or roasted, it asks. When a question is too risky to answer alone, it offers a human trade advisor.
+Core workflow (Input → Process → Output)
+Input: product + where it comes from + where it’s going + your stage. Example: “Roasted coffee, Colombia → Toronto, just an idea.”
+→ Process: the AI searches official sources and trade data, and lists what it couldn’t confirm.
+→ Output: a roadmap of 4–6 prioritized tasks, each with its source link, plus the one action to take this week.
+Who Benefits:
+Primary audience: Aspiring entrepreneurs and small business owners exploring trade between Canada and Latino America.
+Why this matters / impact: NexoBridge makes reliable trade information easier to understand and act on, ensuring opportunity does not depend solely on who you already know.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

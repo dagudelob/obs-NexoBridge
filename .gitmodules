@@ -1,0 +1,3 @@
+[submodule "nexo-bridge3"]
+	path = nexo-bridge3
+	url = https://github.com/dagudelob/nexo-bridge3.git
